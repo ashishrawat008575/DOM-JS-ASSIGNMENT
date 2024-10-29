@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+    </header>
+    <div class="container">
+        <div class="form-container">
+            <form id="registration-form">
+                <h2>Register Student Here</h2>
+                <label for="student-name">Student Name:</label>
+                <input type="text" id="student-name" placeholder="Enter name here" required pattern="[A-Za-z\s]+" required>
+                
+                <label for="student-id">Student ID:</label>
+                <input type="number" id="student-id" placeholder="Enter student ID" required>
+                
+                <label for="class">Class:</label>
+                <input type="text" id="class" placeholder="Enter class here" required>
+                
+                <label for="roll-no">Roll No:</label>
+                <input type="number" id="roll-no" placeholder="Enter roll number" required>
+            
+                <button type="submit">Register Student</button>
+            </form>
+        </div>
+        
+        <div class="table-container">
+            <h2>Registered Students List</h2>
+            <div class="table-scroll-container">
+            <table id="student-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ID</th>
+                        <th>Class</th>
+                        <th>Roll No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list"></tbody>
+            </table>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Student Registration System. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
